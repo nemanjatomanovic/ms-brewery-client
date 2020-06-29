@@ -14,6 +14,7 @@
 	<name>ms-brewery-client</name>
 	<description>MS Brewery Client</description>
 
+
 	<properties>
 		<java.version>11</java.version>
 	</properties>
