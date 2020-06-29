@@ -29,11 +29,11 @@ public class CustomerClient {
     public URI addNewCustomer(CustomerDto customerDto){
         return restTemplate.postForLocation(apiHost + CUSTOMER_PATH_V1, customerDto);
     }
-    public void updateBeer(UUID uuid, CustomerDto customerDto){
-        restTemplate.put(apiHost + "/update" + CUSTOMER_PATH_V1 + uuid.toString(), customerDto);
+    public void updateCustomer(UUID uuid, CustomerDto customerDto){
+        restTemplate.put(apiHost + CUSTOMER_PATH_V1 + uuid.toString(), customerDto);
     }
-    public void deleteBeer(UUID uuid){
-        restTemplate.delete(apiHost + "/delete" + CUSTOMER_PATH_V1 + uuid.toString());
+    public void deleteCustomer(UUID uuid){
+        restTemplate.delete(apiHost + CUSTOMER_PATH_V1 + uuid.toString());
     }
 
     public void setApiHost(String apiHost) {

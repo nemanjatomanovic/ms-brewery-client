@@ -36,17 +36,17 @@ class CustomerClientTest {
     }
 
     @Test
-    void updateBeer() {
+    void updateCustomer() {
         CustomerDto dto = CustomerDto.builder()
                 .name("Pale Ale")
                 .id(UUID.randomUUID())
                 .build();
 
-        customerClient.updateBeer(UUID.randomUUID(), dto);
+        customerClient.updateCustomer(UUID.randomUUID(), dto);
     }
 
     @Test
-    void deleteBeer() {
-        customerClient.deleteBeer(UUID.randomUUID());
+    void deleteCustomer() {
+        customerClient.deleteCustomer(UUID.randomUUID());
     }
 }
